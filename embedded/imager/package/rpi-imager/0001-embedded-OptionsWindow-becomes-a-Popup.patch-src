@@ -8,10 +8,10 @@ Subject: [PATCH] embedded: OptionsWindow becomes a Popup
  src/main.qml         | 11 +++++++++++
  2 files changed, 22 insertions(+), 1 deletion(-)
 
-diff --git a/OptionsPopup.qml b/OptionsPopup.qml
+diff --git a/src/OptionsPopup.qml b/src/OptionsPopup.qml
 index 0ba94b0a..e5c20769 100644
---- a/OptionsPopup.qml
-+++ b/OptionsPopup.qml
+--- a/src/OptionsPopup.qml
++++ b/src/OptionsPopup.qml
 @@ -10,7 +10,7 @@ import QtQuick.Window 2.15
  import QtQml.Models
  import "qmlcomponents"
@@ -38,10 +38,10 @@ index 0ba94b0a..e5c20769 100644
      Keys.onEscapePressed: {
          popup.close()
      }
-diff --git a/main.qml b/main.qml
+diff --git a/src/main.qml b/src/main.qml
 index 63dd21a9..cee44a84 100644
---- a/main.qml
-+++ b/main.qml
+--- a/src/main.qml
++++ b/src/main.qml
 @@ -1235,6 +1235,17 @@ ApplicationWindow {
              imageWriter.setSavedCustomizationSettings(settings)
              usesavedsettingspopup.hasSavedSettings = true

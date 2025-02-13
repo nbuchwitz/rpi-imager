@@ -2,8 +2,8 @@
 
 set -e
 
-BUILDROOT=buildroot-2024.02.3
-BUILDROOT_TAR=buildroot-2024.02.3.tar.gz
+BUILDROOT=buildroot-2024.11.1
+BUILDROOT_TAR=buildroot-2024.11.1.tar.gz
 
 if [ ! -e "${BUILDROOT}" ]; then
     tar xvf "${BUILDROOT_TAR}"
@@ -16,7 +16,7 @@ fi
 #
 # Build everything
 #
-make -C "${BUILDROOT}" BR2_EXTERNAL="$PWD/imager"
+make -j`nproc` -C "${BUILDROOT}" BR2_EXTERNAL="$PWD/imager"
 
 #
 # Copy the files we are interested in from buildroot's "output/images" directory

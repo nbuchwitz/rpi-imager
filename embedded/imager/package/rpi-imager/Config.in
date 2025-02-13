@@ -1,21 +1,20 @@
 config BR2_PACKAGE_RPI_IMAGER
-        bool "rpi-imager"
-        select BR2_PACKAGE_QT5
-        select BR2_PACKAGE_QT5BASE_GUI
-        select BR2_PACKAGE_QT5BASE_CONCURRENT
-        select BR2_PACKAGE_QT5BASE_JPEG
-        select BR2_PACKAGE_QT5BASE_PNG
-        select BR2_PACKAGE_QT5SVG
-        select BR2_PACKAGE_QT5QUICKCONTROLS2
-        select BR2_PACKAGE_LIBCURL
-        select BR2_PACKAGE_LIBARCHIVE
-        select BR2_PACKAGE_ZSTD        
-        select BR2_PACKAGE_DOSFSTOOLS
-        select BR2_PACKAGE_DOSFSTOOLS_MKFS_FAT
-        select BR2_PACKAGE_OPENSSL
-        select BR2_PACKAGE_CA_CERTIFICATES
-        select BR2_PACKAGE_QT5TOOLS
-        select BR2_PACKAGE_QT5TOOLS_LINGUIST_TOOLS
-        
-        help
-          Raspberry Pi Imager
+	bool "rpi-imager"
+	depends on BR2_PACKAGE_QT6
+	select BR2_PACKAGE_QT6BASE
+	select BR2_PACKAGE_QT6SVG
+	select BR2_PACKAGE_QT6QUICKCONTROLS2
+	select BR2_PACKAGE_LIBCURL
+	select BR2_PACKAGE_LIBARCHIVE
+	select BR2_PACKAGE_ZLIB
+	select BR2_PACKAGE_XZ
+	select BR2_PACKAGE_ZSTD
+	select BR2_PACKAGE_NETTLE
+	select BR2_PACKAGE_GNUTLS
+	select BR2_PACKAGE_LIBDRM
+	select BR2_PACKAGE_LIBIDN2
+	help
+	  Raspberry Pi Imager - A GUI tool for writing OS images to SD cards.
+
+	  https://github.com/raspberrypi/rpi-imager
+

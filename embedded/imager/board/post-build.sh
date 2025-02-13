@@ -21,4 +21,4 @@ rm -f blkdiscard blkid blkzone blockdev chcpu ctrlaltdel fdisk findfs \
   swapoff swapon)
 
 rm -rf ${TARGET_DIR}/usr/lib/metatypes ${TARGET_DIR}/usr/lib/qt/plugins/qmltooling 
-rm -f ${TARGET_DIR}/usr/lib/qt/plugins/platforms/libqvnc.so ${TARGET_DIR}/usr/lib/libQt5QuickTest.so* ${TARGET_DIR}/usr/lib/libQt5Test.so*
+rm -f ${TARGET_DIR}/usr/lib/qt/plugins/platforms/libqvnc.so ${TARGET_DIR}/usr/lib/libQt6QuickTest.so* ${TARGET_DIR}/usr/lib/libQt6Test.so*
